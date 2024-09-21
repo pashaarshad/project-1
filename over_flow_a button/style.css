@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+   justify-content: center;
+    width: 100%;
+}
+#main a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50%;
+   position: relative;
+   overflow: hidden;
+  
+  
+  
+
+}
+#main a::after{
+    content: "";
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: color;
+    position: absolute;
+    left: 0px;
+    bottom: -100px;
+    transition: all ease 0.5s;
+    
+}
+#main a:hover::after {
+    bottom: 0px;
+    transition: all ease 0.5s;
+    border-radius: 50%;
+ 
+}

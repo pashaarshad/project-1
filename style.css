@@ -1,0 +1,265 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: auto;
+
+    /* background-color: #FF8FBC; */
+    /* background-color: #EF66A2; */
+    position: relative;
+    padding: 0 2vw;
+
+}
+
+nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav img {
+    height: 17vh;
+    width: auto;
+}
+
+.nav-a {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav-a a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.809);
+    border-radius: 50%;
+    font-size: 17px;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+
+}
+
+.nav-a a::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: -100px;
+    mix-blend-mode: color;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+
+
+
+}
+
+.nav-a a:hover::after {
+    bottom: 0px;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+
+}
+
+.nav-a a:hover {
+    color: white;
+}
+
+.cernter1 {
+    display: flex;
+    height: 65%;
+    width: 100%;
+    /* background-color: #FF8FBC; */
+    border-bottom: 1px solid rgba(22, 4, 4, 0.816);
+    padding-bottom: 3vw;
+    padding: 4vw 0;
+
+}
+
+.cernter1 .left1 {
+
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    text-justify: justify;
+    padding: 0px 40px;
+    font-size: 2vw;
+    text-align: left;
+}
+
+.cernter1 .right1 {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 41px;
+    font-size: 4vw;
+    line-height: 8vw;
+    text-align: right;
+
+}
+
+.page1 video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 30px;
+    padding: 20px 0;
+}
+
+.hero {
+    height: 40vw;
+    width: 46vw;
+    background : linear-gradient(rgb(185, 139, 139),rgb(117, 82, 82));
+    right: 0px;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: 32vw;
+    filter: blur(20px);
+    
+  
+}
+
+.hero1 {
+    height: 100%;
+    width: 100%;
+    background : linear-gradient(rgb(180, 168, 168),white);
+    position: absolute;
+    border-radius: 50%;
+    /* filter: blur(20px); */
+    animation-name: ani2;
+    animation-duration: 4s; 
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.hero2 {
+    height: 100%;
+    width: 100%;
+    background : linear-gradient(rgb(190, 0, 0),white);
+    position: absolute;
+    border-radius: 50%;
+    /* filter: blur(20px); */
+    animation-name: ani1;
+    animation-duration: 4s; 
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.hero3 {
+    height: 100%;
+    width: 100%;
+    background : linear-gradient(rgb(107, 74, 74),white);
+    position: absolute;
+    border-radius: 50%;
+    /* filter: blur(20px); */
+    animation-name: ani3;
+    animation-duration: 4s; 
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani1{
+
+    from {
+        transform: translate(-40%, 10%);
+    }
+
+    to {
+        transform: translate(-50%,0%);
+    }
+
+}
+
+@keyframes ani2{
+
+    from {
+        transform: translate(-10%, 10%);
+    }
+
+    to {
+        transform: translate(-20%, 40%);
+    }
+
+}
+
+@keyframes ani3{
+
+    from {
+        transform: translate(-10%, 10%);
+    }
+
+    to {
+        transform: translate(-20%, -10%);
+    }
+
+}
+#page2{
+    height: 15Vh;
+    width: 100%;
+ 
+    display: flex;
+    
+}
+.con{
+    display: flex;
+    align-items: flex-start;
+}
+.con h1{
+    align-items: center;
+    display: inline;
+    font-size: 4vw;
+
+}
+.dot{
+    height: 3vw;
+    width: 3vw;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0.8vw 1.5vw;
+}
+.coning{
+    
+    white-space: nowrap;
+   display: flex;
+}
+.moveing-text h1{
+   font-size: 7vw;
+  
+ display: inline-block;
+}
+.gola{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+

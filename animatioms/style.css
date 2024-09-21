@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+  display: flex;
+ 
+  padding: 5vw 2vw;
+
+
+}
+.anims{
+    height: 60vh;
+    width: 30%;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+.anims1{
+    height: 60vh;
+    width: 30%;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    from{
+        transform: translate(-10% ,-10%);
+    }
+    to{
+        transform: translate(10% ,10%);
+    }
+}
