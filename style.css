@@ -1,3 +1,16 @@
+:root{
+         --bg-main: #FF8FBC;
+         --hero-color : #fff;
+         --hero1-color : #fff;
+         --hero2-color : #fff;
+         --hero3-color : #fff;
+         --nav-text-color : black;
+         --nav-aun-color : #fff;
+
+
+
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,7 +20,7 @@
     min-height: 100vh;
     width: auto;
 
-    /* background-color: #FF8FBC; */
+    background-color: var(--bg-main);
     /* background-color: #EF66A2; */
     position: relative;
     padding: 0 2vw;
@@ -54,7 +67,7 @@ nav img {
 .nav-a a::after {
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: var(--nav-aun-color);
     height: 100%;
     width: 100%;
     left: 0px;
@@ -75,7 +88,7 @@ nav img {
 }
 
 .nav-a a:hover {
-    color: white;
+    color: var(--nav-text-color);
 }
 
 .cernter1 {
@@ -126,7 +139,7 @@ nav img {
 .hero {
     height: 40vw;
     width: 46vw;
-    background : linear-gradient(rgb(185, 139, 139),rgb(117, 82, 82));
+    background : var(--hero-color);
     right: 0px;
     position: absolute;
     border-top-left-radius: 50%;
@@ -140,7 +153,7 @@ nav img {
 .hero1 {
     height: 100%;
     width: 100%;
-    background : linear-gradient(rgb(180, 168, 168),white);
+    background : var(--hero1-color);
     position: absolute;
     border-radius: 50%;
     /* filter: blur(20px); */
@@ -154,7 +167,7 @@ nav img {
 .hero2 {
     height: 100%;
     width: 100%;
-    background : linear-gradient(rgb(190, 0, 0),white);
+    background : var(--hero2-color);
     position: absolute;
     border-radius: 50%;
     /* filter: blur(20px); */
@@ -167,7 +180,7 @@ nav img {
 .hero3 {
     height: 100%;
     width: 100%;
-    background : linear-gradient(rgb(107, 74, 74),white);
+    background : var(--hero3-color);
     position: absolute;
     border-radius: 50%;
     /* filter: blur(20px); */
@@ -216,7 +229,7 @@ nav img {
 #page2{
     height: 15Vh;
     width: 100%;
- 
+    background-color: var(--bg-main);
     display: flex;
     
 }
@@ -254,6 +267,69 @@ nav img {
     background-color: rebeccapurple;
     display: inline-block;
 }
+.page3{
+    height: 90vh;
+    width: auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vw 2vw;
+    position: relative;
+    
+ 
+    
+   
+    
+}
+.page3 h1{
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 60%;
+}
+.page3-right{
+    width: 25%;
+ 
+ 
+}
+.page3-right img{
+   
+    width: 100%;
+    border-radius: 15%;
+    
+}
+.page3-right p {
+    font-weight: 100;
+    margin-top: 2vw;
+    font-size: 1.3vw;
+}
+.hero-page3{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    top: 53%;
+    left: 23%;
+    background-color: rebeccapurple;
+    animation-name: hero-page3-anmi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+   
+
+}
+
+@keyframes hero-page3-anmi
+{
+    from{
+        transform: translate(20px,40px)
+    }
+    to {
+        transform: translate(60px 90px);
+    }
+}
 
 
 
@@ -261,5 +337,8 @@ nav img {
 
 
 
-
-
+.page4{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
