@@ -3,7 +3,8 @@
          --hero-color : #fff;
          --hero1-color : #fff;
          --hero2-color : #fff;
-         --hero3-color : #fff;
+         --hero3-color : linear-gradient(to top,#ffff,gray);
+         --heros-colors : linear-gradient(to top,#855353,rgb(17, 231, 203));
          --nav-text-color : black;
          --nav-aun-color : #fff;
 
@@ -183,12 +184,14 @@ nav img {
     background : var(--hero3-color);
     position: absolute;
     border-radius: 50%;
-    /* filter: blur(20px); */
+    filter: blur(20px);
     animation-name: ani3;
     animation-duration: 4s; 
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    mix-blend-mode: difference;
+
 }
 
 @keyframes ani1{
@@ -270,7 +273,7 @@ nav img {
 .page3{
     height: 90vh;
     width: auto;
-  
+  background-color: var(--bg-main);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -309,28 +312,31 @@ nav img {
     position: absolute;
     border-radius: 50%;
     filter: blur(20px);
-    top: 53%;
+    top: 50%;
     left: 23%;
-    background-color: rebeccapurple;
+    background: var(--heros-colors);
     animation-name: hero-page3-anmi;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    z-index: -1;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
    
 
 }
 
-@keyframes hero-page3-anmi
-{
+@keyframes hero-page3-anmi {
     from{
-        transform: translate(20px,40px)
+        transform: translate(10%, -10%) skew(0);
     }
     to {
-        transform: translate(60px 90px);
+        transform: translate(-4%, -20%) skew(6deg);
     }
 }
-
 
 
 
@@ -340,5 +346,44 @@ nav img {
 .page4{
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--bg-main);
+
+}
+.page4 .page4-con {
+    height: 4vw;
+    width: 100vw;
+    /* background-color: rgb(207, 86, 86); */
+    border: 1px solid black;
+    display: flex;
+   padding: 0vw 2vw;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  
+ 
+
+}
+.page4 .page4-con h1{
+    position: relative;
+    z-index: 9;
+}
+/* .page4 .page4-con:hover{
+    background-color: rgb(248, 63, 63);
+} */
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #e4e3e3;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    
+    
+
+
+}
+.page4-con:hover .overlay{
+    top: 0;
+    transition:  0.2s;
+
 }
