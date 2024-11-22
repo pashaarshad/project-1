@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starry Night Background</title>
+  <style>
+    /* Basic styling for full-screen view */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    /* Container for stars */
+    .stars {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Style for individual stars */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: twinkle 2s infinite ease-in-out, float 10s infinite linear;
+    }
+
+    /* Twinkling effect */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; transform: scale(1.2); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    /* Floating effect for slight movement */
+    @keyframes float {
+      from {
+        transform: translate(0px, 0px);
+      }
+      to {
+        transform: translate(calc(10px * (random() - 0.5)), calc(10px * (random() - 0.5)));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars" id="starsContainer"></div>
+
+  <script>
+    // JavaScript to create 100 stars at random positions
+    const starsContainer = document.getElementById('starsContainer');
+
+    for (let i = 0; i < 500; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      // Randomize position
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.left = Math.random() * 100 + 'vw';
+      // Add a unique animation delay to each star
+      star.style.animationDelay = `${Math.random() * 2}s`;
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+</body>
+</html>
