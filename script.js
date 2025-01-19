@@ -56,3 +56,36 @@ eles.forEach(function(e){
 //     star.style.animationDelay = `${Math.random() * 2}s`;
 //     starsContainer.appendChild(star);
 //   }
+
+
+
+
+function menuf(){
+    var menu = document.querySelector("nav h6") 
+var full = document.querySelector("#full-scr")
+var navimg = document.querySelector("nav img")
+var flag = 0
+menu.addEventListener("click",function(){
+  
+  full.style.top = "0"
+    navimg.style.opacity = "0"
+
+})
+
+full.addEventListener("click",function(){
+  
+    full.style.top = "-100vh"
+     navimg.style.opacity = "1"
+
+    
+})
+
+}
+var loder = document.querySelector("#loder")
+setTimeout(function(){
+
+    loder.style.top = "-100vh"
+
+},4200)
+
+

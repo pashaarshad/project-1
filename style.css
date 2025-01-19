@@ -95,7 +95,9 @@ nav img {
 .nav-a a:hover {
     color: var(--nav-text-color);
 }
-
+.page1 h6{
+    display: none;
+}
 .cernter1 {
     display: flex;
     height: 65%;
@@ -233,6 +235,7 @@ nav img {
     }
 
 }
+
 #page2{
     height: 15Vh;
     width: 100%;
@@ -412,6 +415,7 @@ nav img {
     min-width:  80vw;
     padding: 10px 40px;
     background-color: var(--bg-main);
+    padding: 3vw 4vw;
 
 }
 
@@ -431,9 +435,11 @@ nav img {
     background-color: black;
     border-radius: 1.6%;
     border-top-left-radius:30% ;
+    border-bottom-left-radius: 30%;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-right: 2vw;
     
  
 }
@@ -442,12 +448,15 @@ nav img {
     height: 100%;
     width: 50%;
     
+    
  
 }
 .p5_conr img{
     height: 100%;
     width: 100%;
     border-radius: 1.6%;
+    border-top-left-radius:30% ;
+    border-bottom-left-radius: 30%;
 }
 .page6{
     height: 100vh;
@@ -460,13 +469,15 @@ nav img {
 }
 .down{
     position: fixed;
-    z-index: 9;
+ 
     height: 100vh;
     width: 100vw;
     display: flex;
     bottom: 0;
-    background-color: #ffe0e5;
+    background-color: #000000;
     color: #e25b71;
+    justify-content:center;
+    align-items: center;
    
   
   
@@ -483,6 +494,97 @@ nav img {
    
     
 }
+.hero-page3_d{
+    height: 30vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(400px);
+    top: 20%;
+    left: 5%;
+    background: rgb(201, 9, 41);
+    animation-name: hero-page3-anmi-d;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+.hero-page3_d{
+    height: 30vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(300px);
+    top: 20%;
+    left: 5%;
+    background: rgb(201, 9, 41);
+    animation-name: hero-page3-anmi-d;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+@keyframes hero-page3-anmi-d {
+    from{
+        transform: translate(70%, 20%) skew(6deg);
+    }
+    to {
+        transform: translate(-90%, -90%) skew(6deg);
+    }
+}
+
+.hero-page3_d_g{
+    height: 30vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(300px);
+    top: 20%;
+    left: 5%;
+    background: rgb(15, 221, 60);
+    animation-name: hero-page3-anmi-d-g;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+@keyframes hero-page3-anmi-d-g {
+    from{
+        transform: translate(-70%, -20%) skew(6deg);
+    }
+    to {
+        transform: translate(90%, 90%) skew(6deg);
+    }
+}
+
+.down #down_1{
+    display: flex;
+    height: 10vh;
+  
+    background-color: wheat;
+    bottom: 10px;
+}
 
  /* Container for stars */
  .stars {
@@ -495,8 +597,8 @@ nav img {
   /* Style for individual stars */
   .star {
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 1.5vw;
+    height: 1vh;
     background-color: white;
     border-radius: 50%;
     opacity: 0;
@@ -543,30 +645,843 @@ nav img {
     }
  }
  .page7{
+
+   
     height: 100vh; 
-    width: 100vw;
+    
     background-color: var(--bg-main);
+    
  }
 
  /* ********************************************** SWAPER JS  *************************************** */
 
  .swiper {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
   }
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
+   padding: 30px -10px;
+    background : var(--bg-main);
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    text-justify: auto;
+    border-left: 2px solid black;
+    
   }
 
   .swiper-slide img {
     display: block;
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
+
+  .mid-img {
+    height: 60%;
+    width: 70%;
+    background-color: red;
+    margin: 10px 2px;
+    border-radius: 20%;
+   
+}
+.mid-img img {
+       border-radius: 20%;
+      
+}
+
+@media (max-width:600px)
+{
+    .page1 {
+        min-height: 50vh;
+        width: auto;
+        background-color: var(--bg-main);
+        position: relative;
+       
+    
+    }
+    /* *********************MEnu*********** */
+    .page1 h6{
+        margin-top: 3vw;
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid black;
+        border-radius: 20%;
+        font-size: 5vw;
+        font-weight: 200;
+        padding-left:10vw;
+        
+    }
+    #full-scr{
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--bg-main);
+        position: fixed;
+        z-index: 999;
+        top :-100vh;
+        transition: all ease 0.9s;
+    }
+    #full-scr ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    #full-scr ul a{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: rgb(17, 11, 11);
+        font-weight: 500;
+        border: 1px solid rgba(0, 0, 0, 0.809);
+        border-radius: 50%;
+        font-size: 30px;
+        position: relative;
+        gap: 10vw;
+        z-index: 9;
+        overflow: hidden;
+    }
+    nav {
+    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    
+    
+    }
+    
+    nav img {
+        height: 14vw;
+        width: auto;
+        transition: all ease 0.3s;
+    }
+    
+    .nav-a {
+        display: none;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .nav-a a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        border: 1px solid rgba(0, 0, 0, 0.809);
+        border-radius: 50%;
+        font-size: 17px;
+        position: relative;
+        z-index: 9;
+        overflow: hidden;
+    
+    }
+    
+    .nav-a a::after {
+        content: "";
+        position: absolute;
+        background-color: var(--nav-aun-color);
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        bottom: -100px;
+        mix-blend-mode: color;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+    
+    
+    
+    }
+    
+    .nav-a a:hover::after {
+        bottom: 0px;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+    
+    }
+    
+    .nav-a a:hover {
+        color: var(--nav-text-color);
+    }
+    
+    .cernter1 {
+        display: flex;
+        height: 65%;
+        width: 100%;
+        /* background-color: #FF8FBC; */
+        border-bottom: 1px solid rgba(22, 4, 4, 0.816);
+        padding-bottom: 3vw;
+        padding: 4vw 0;
+    
+    }
+    
+    .cernter1 .left1 {
+    
+        height: 100%;
+        width: 50vw;
+        display: flex;
+        align-items: self-end;
+        justify-content: center;
+        text-justify: justify;
+        padding: 0px 40px;
+        font-size: 2vw;
+        text-align: left;
+    }
+    
+    .cernter1 .right1 {
+    
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0px 41px;
+        font-size: 4vw;
+        line-height: 8vw;
+        text-align: right;
+    
+    }
+    
+    .page1 video {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-radius: 30px;
+        padding: 20px 0;
+    }
+    
+    .hero {
+        height: 80vw;
+        width: 30vw;
+        background : var(--hero-color);
+        right: 0px;
+        position: absolute;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        top: 32vw;
+        filter: blur(20px);
+        
+      
+    }   
+    
+    .hero1 {
+        height: 100%;
+        width: 100%;
+        background : var(--hero1-color);
+        position: absolute;
+        border-radius: 50%;
+        /* filter: blur(20px); */
+        animation-name: ani2;
+        animation-duration: 4s; 
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    
+    .hero2 {
+        height: 100%;
+        width: 100%;
+        background : var(--hero2-color);
+        position: absolute;
+        border-radius: 50%;
+        /* filter: blur(20px); */
+        animation-name: ani1;
+        animation-duration: 4s; 
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+    .hero3 {
+        height: 100%;
+        width: 100%;
+        background : var(--hero3-color);
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(20px);
+        animation-name: ani3;
+        animation-duration: 4s; 
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        mix-blend-mode: difference;
+    
+    }
+    
+    @keyframes ani1{
+    
+        from {
+            transform: translate(-40%, 10%);
+        }
+    
+        to {
+            transform: translate(-50%,0%);
+        }
+    
+    }
+    
+    @keyframes ani2{
+    
+        from {
+            transform: translate(-10%, 10%);
+        }
+    
+        to {
+            transform: translate(-20%, 40%);
+        }
+    
+    }
+    
+    @keyframes ani3{
+    
+        from {
+            transform: translate(-10%, 10%);
+        }
+    
+        to {
+            transform: translate(-20%, -10%);
+        }
+    
+    }
+
+    
+#page2{
+    height: 7Vh;
+    width: 100vw;
+    background-color: var(--bg-main);
+    display: flex;
+   
+    
+}
+.con{
+    display: flex;
+    align-items: flex-start;
+}
+.con h1{
+    align-items: center;
+   
+    font-size: 4vw;
+
+}
+.dot{
+    height: 3vw;
+    width: 3vw;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0.8vw 1.5vw;
+}
+.coning{
+    
+   
+   display: flex;
+}
+.moveing-text h1{
+   font-size: 7vw;
+  
+ display: inline-block;
+}
+.gola{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    display: inline-block;
+}
+.page3{
+    height: 20vh;
+    width: auto;
+  background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vw 2vw;
+    position: relative; 
+    
+ 
+    
+   
+    
+}
+.page3 h1{
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 60%;
+}
+.page3-right{
+    width: 25%;
+ 
+ 
+}
+.page3-right img{
+   
+    width: 100%;
+    border-radius: 15%;
+    
+}
+.page3-right p {
+    font-weight: 100;
+    margin-top: 2vw;
+    font-size: 1.3vw;
+}
+.hero-page3{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    top: 50%;
+    left: 23%;
+    background: var(--heros-colors);
+    animation-name: hero-page3-anmi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+
+@keyframes hero-page3-anmi {
+    from{
+        transform: translate(10%, -10%) skew(0);
+    }
+    to {
+        transform: translate(-4%, -20%) skew(6deg);
+    }
+}
+
+
+
+
+
+
+.page4{
+    height: 60vh;
+    min-width:  100%;
+    background-color: var(--bg-main);
+
+}
+.page4 .page4-con {
+    height: 10vh;
+    width: 100%;
+    /* background-color: rgb(207, 86, 86); */
+
+    display: flex;
+  
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  
+ 
+
+}
+.page4 .page4-con h1{
+    position: relative;
+    z-index: 9;
+    padding: 10px 70px;
+}
+/* .page4 .page4-con:hover{
+    background-color: rgb(248, 63, 63);
+} */
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #f0c8c8;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    
+    
+
+
+}
+.page4-con:hover .overlay{
+    top: 0;
+    transition:  0.2s;
+
+}
+.fix-img{
+
+    height: 90vw;
+    width: 55vw;
+  
+    position: fixed;
+    z-index: 999;
+    left:  20%;
+    top: 20%;
+    border-radius: 5%;
+    display: none;
+   
+    background-repeat: no-repeat;
+}
+
+.page5{
+    height: 40vh;
+    min-width:  90vw;
+    padding: 10px 40px;
+    background-color: var(--bg-main);
+    padding: 3vw 4vw;
+    display: flex;
+
+}
+
+.page5 .p5_con{
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 1.6%;
+   
+   
+
+    
+}
+.p5_con .p5_conl{
+    height: 100%;
+    width: 900%;
+   
+ 
+}
+
+.p5_con .p5_conr{
+    height: 100%;
+    width: 50%;
+  display: none;
+    
+    
+ 
+}
+.p5_conr img{
+    height: 20vh;
+    width: 300vw;
+    border-radius: 1.6%;
+    border-top-left-radius:30% ;
+    border-bottom-left-radius: 30%;
+    display: inline-flex;
+}
+.page6{
+    height: 100vh;
+    min-width:  80vw;
+   
+  
+    
+    
+
+}
+.down{
+    position: fixed;
+ 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    bottom: 0;
+    background-color: #000000;
+    color: #e25b71;
+    justify-content:center;
+    align-items: center;
+   
+  
+  
+
+}
+.down h1{
+    font-size: 10vw;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    
+   
+    
+}
+.hero-page3_d{
+    height: 30vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(400px);
+    top: 20%;
+    left: 5%;
+    background: rgb(201, 9, 41);
+    animation-name: hero-page3-anmi-d;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+.hero-page3_d{
+    height: 80vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(150px);
+    top: 20%;
+    left: 5%;
+    background: rgb(201, 9, 41);
+    animation-name: hero-page3-anmi-d;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+@keyframes hero-page3-anmi-d {
+    from{
+        transform: translate(70%, 20%) skew(6deg);
+    }
+    to {
+        transform: translate(-90%, -90%) skew(6deg);
+    }
+}
+
+.hero-page3_d_g{
+    height: 80vw;
+    width: 100vw;
+    position: absolute;
+    border-radius: 20%;
+    filter: blur(150px);
+    top: 20%;
+    left: 5%;
+    background: rgb(15, 221, 60);
+    animation-name: hero-page3-anmi-d-g;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease-in-out;
+    
+
+    mix-blend-mode: difference;
+ 
+   
+
+}
+@keyframes hero-page3-anmi-d-g {
+    from{
+        transform: translate(-70%, -20%) skew(6deg);
+    }
+    to {
+        transform: translate(90%, 90%) skew(6deg);
+    }
+}
+
+.down #down_1{
+    display: flex;
+    height: 10vh;
+  
+    background-color: wheat;
+    bottom: 10px;
+}
+
+ /* Container for stars */
+ .stars {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Style for individual stars */
+  .star {
+    position: absolute;
+    width: 1.5vw;
+    height: 1vh;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite ease-in-out, float 10s infinite linear;
+  }
+
+  /* Twinkling effect */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(1.2); }
+    50% { opacity: 1; transform: scale(1.5); }
+  }
+
+  /* Floating effect for slight movement */
+  @keyframes float {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(calc(10px * (random() - 0.5)), calc(10px * (random() - 0.5)));
+    }
+  }
+
+  .down .down-div{
+ 
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(122, 81, 81);
+
+   
+    /* animation: twinkle 2s infinite ease-in-out, float 10s infinite linear; */
+    /* animation:  down1 3s infinite  linear alternate; */
+
+ 
+
+ }
+
+ @keyframes down1 {
+    from
+    {
+        transform: translate(10px,90px);
+    }
+    to {
+         transform: translate(calc(10px * (random() - 0.5)), calc(10px * (random() - 0.5)));
+    }
+ }
+ .page7{
+
+   
+    height: 100vh; 
+    
+    background-color: var(--bg-main);
+    
+ }
+
+ /* ********************************************** SWAPER JS  *************************************** */
+
+ .swiper {
+    width: 90%;
+    height: 60%;
+  }
+
+
+
+  .swiper-slide {
+    text-align: center;
+   padding: 30px -10px;
+    background : var(--bg-main);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-justify: auto;
+    border-left: 2px solid rgb(136, 13, 13);
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mid-img {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    margin: 10px 2px;
+    border-radius: 20%;
+   
+}
+.mid-img img {
+       border-radius: 20%;
+      
+}
+
+
+
+
+}
+
+#loder{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    top : 0 ;
+    transition: all ease 0.3s;
+    color : white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loder h1
+{
+    color: transparent;
+    font-size: 9vw;
+    background: linear-gradient(to right, #f504e9, #1dff28, #e4651b);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+
+    animation-name:loder-ani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+
+#full-scr{
+    display: none;
+}
+#loder h1:nth-child(2){
+    animation-delay: 3s;
+
+}
+#loder h1:nth-child(3){
+    animation-delay: 5s;
+
+}
+
+@keyframes loder-ani{
+    0%{
+       opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+  
+    100%{
+       opacity: 0;
+    }
+}
+/* #loder h1:nth-child(1){
+    opacity: 1;
+    animation-name:loder-ani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+}
+
+
+
+@keyframes loder-ani{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
