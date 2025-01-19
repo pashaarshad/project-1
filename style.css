@@ -234,6 +234,7 @@ nav img {
         transform: translate(-20%, -10%);
     }
 
+
 }
 
 #page2{
@@ -1464,24 +1465,4 @@ nav img {
        opacity: 0;
     }
 }
-/* #loder h1:nth-child(1){
-    opacity: 1;
-    animation-name:loder-ani;
-    animation-duration: 2s;
-    animation-delay: 1s;
 
-}
-
-
-
-@keyframes loder-ani{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-} */
