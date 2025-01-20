@@ -1431,6 +1431,7 @@ nav img {
     font-size: 9vw;
     background: linear-gradient(to right, #f504e9, #1dff28, #e4651b);
     -webkit-background-clip: text;
+    background-clip: text;
     position: absolute;
     opacity: 0;
 
@@ -1465,4 +1466,3 @@ nav img {
        opacity: 0;
     }
 }
-
